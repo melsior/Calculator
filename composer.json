@@ -1,0 +1,32 @@
+{
+    "name": "melsior/test-calc",
+    "description": "write for study TDD, using composer and phpunit.",
+    "bin": ["bin/calc-php"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Vasilyev",
+            "email": "melsior@gmail.com"
+        }
+    ],
+    "scripts": {
+        "phpcs": "phpcs",
+        "phpunit": "phpunit"
+    },
+    "autoload": {
+        "psr-4": {
+            "Calculator\\": "src/"
+        },
+        "files": [
+            "src/Calculator.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "squizlabs/php_codesniffer": "*",
+        "codeclimate/php-test-reporter": "dev-master"
+    }
+}
